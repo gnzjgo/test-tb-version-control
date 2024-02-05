@@ -1,0 +1,6 @@
+NODE endpoint
+SQL >
+    SELECT JSON_VALUE(payload, '$.location') location, count() hits
+    FROM demo_analytics_events
+    GROUP BY location
+    ORDER BY hits DESC
