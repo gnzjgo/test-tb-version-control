@@ -1,6 +1,6 @@
 TOKEN "read_endpoints_token" READ
 
-NODE untitled_pipe_9948_0
+NODE endpoint
 SQL >
     SELECT toStartOfMinute(timestamp) t, count() hits
     FROM demo_analytics_events
