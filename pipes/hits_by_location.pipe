@@ -1,3 +1,8 @@
+DESCRIPTION >
+    Count of events per country
+
+TOKEN "read_endpoints_token" READ
+
 NODE endpoint
 SQL >
     SELECT JSON_VALUE(payload, '$.location') location, count() hits
